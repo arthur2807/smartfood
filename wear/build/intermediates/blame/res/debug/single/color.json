@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\Users\\arthu\\Downloads\\SmartFood\\wear\\build\\intermediates\\res\\merged\\debug\\color\\card_grey_text_color.xml",
+        "source": "C:\\Users\\arthu\\.android\\build-cache\\5a3343046241918dd184abe7d023ea6529f159dc\\output\\res\\color\\card_grey_text_color.xml"
+    },
+    {
+        "merged": "C:\\Users\\arthu\\Downloads\\SmartFood\\wear\\build\\intermediates\\res\\merged\\debug\\color\\circular_button.xml",
+        "source": "C:\\Users\\arthu\\.android\\build-cache\\5a3343046241918dd184abe7d023ea6529f159dc\\output\\res\\color\\circular_button.xml"
+    },
+    {
+        "merged": "C:\\Users\\arthu\\Downloads\\SmartFood\\wear\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_tint.xml",
+        "source": "C:\\Users\\arthu\\.android\\build-cache\\9cded88a7981808dbaa43c36ba46f00955e9e4a3\\output\\res\\color\\common_google_signin_btn_tint.xml"
+    },
+    {
+        "merged": "C:\\Users\\arthu\\Downloads\\SmartFood\\wear\\build\\intermediates\\res\\merged\\debug\\color\\card_text_color.xml",
+        "source": "C:\\Users\\arthu\\.android\\build-cache\\5a3343046241918dd184abe7d023ea6529f159dc\\output\\res\\color\\card_text_color.xml"
+    },
+    {
+        "merged": "C:\\Users\\arthu\\Downloads\\SmartFood\\wear\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\arthu\\.android\\build-cache\\9cded88a7981808dbaa43c36ba46f00955e9e4a3\\output\\res\\color\\common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\arthu\\Downloads\\SmartFood\\wear\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_light.xml",
+        "source": "C:\\Users\\arthu\\.android\\build-cache\\9cded88a7981808dbaa43c36ba46f00955e9e4a3\\output\\res\\color\\common_google_signin_btn_text_light.xml"
+    }
+]
