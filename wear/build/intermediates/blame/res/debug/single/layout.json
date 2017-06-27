@@ -28,8 +28,20 @@
         "source": "C:\\Users\\arthu\\.android\\build-cache\\5a3343046241918dd184abe7d023ea6529f159dc\\output\\res\\layout\\alert_dialog_wearable.xml"
     },
     {
+        "merged": "C:\\Users\\arthu\\Downloads\\SmartFood\\wear\\build\\intermediates\\res\\merged\\debug\\layout\\round_activity_main_teste.xml",
+        "source": "C:\\Users\\arthu\\Downloads\\SmartFood\\wear\\src\\main\\res\\layout\\round_activity_main_teste.xml"
+    },
+    {
         "merged": "C:\\Users\\arthu\\Downloads\\SmartFood\\wear\\build\\intermediates\\res\\merged\\debug\\layout\\single_page_nav_drawer_1_item.xml",
         "source": "C:\\Users\\arthu\\.android\\build-cache\\5a3343046241918dd184abe7d023ea6529f159dc\\output\\res\\layout\\single_page_nav_drawer_1_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\arthu\\Downloads\\SmartFood\\wear\\build\\intermediates\\res\\merged\\debug\\layout\\rect_activity_main_teste.xml",
+        "source": "C:\\Users\\arthu\\Downloads\\SmartFood\\wear\\src\\main\\res\\layout\\rect_activity_main_teste.xml"
+    },
+    {
+        "merged": "C:\\Users\\arthu\\Downloads\\SmartFood\\wear\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main_teste.xml",
+        "source": "C:\\Users\\arthu\\Downloads\\SmartFood\\wear\\src\\main\\res\\layout\\activity_main_teste.xml"
     },
     {
         "merged": "C:\\Users\\arthu\\Downloads\\SmartFood\\wear\\build\\intermediates\\res\\merged\\debug\\layout\\single_page_nav_drawer_5_item.xml",

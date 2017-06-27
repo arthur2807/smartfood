@@ -4,6 +4,10 @@
         "source": "C:\\Users\\arthu\\.android\\build-cache\\ed2cf81762fcf4aee861f153f6f450c9bfdbf2c2\\output\\res\\layout\\abc_screen_simple.xml"
     },
     {
+        "merged": "C:\\Users\\arthu\\Downloads\\SmartFood\\mobile\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_detalhe_post.xml",
+        "source": "C:\\Users\\arthu\\Downloads\\SmartFood\\mobile\\src\\main\\res\\layout\\fragment_detalhe_post.xml"
+    },
+    {
         "merged": "C:\\Users\\arthu\\Downloads\\SmartFood\\mobile\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
         "source": "C:\\Users\\arthu\\.android\\build-cache\\ed2cf81762fcf4aee861f153f6f450c9bfdbf2c2\\output\\res\\layout\\select_dialog_item_material.xml"
     },
@@ -116,12 +120,20 @@
         "source": "C:\\Users\\arthu\\.android\\build-cache\\ed2cf81762fcf4aee861f153f6f450c9bfdbf2c2\\output\\res\\layout\\abc_action_menu_item_layout.xml"
     },
     {
+        "merged": "C:\\Users\\arthu\\Downloads\\SmartFood\\mobile\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_lista_posts.xml",
+        "source": "C:\\Users\\arthu\\Downloads\\SmartFood\\mobile\\src\\main\\res\\layout\\fragment_lista_posts.xml"
+    },
+    {
         "merged": "C:\\Users\\arthu\\Downloads\\SmartFood\\mobile\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
         "source": "C:\\Users\\arthu\\.android\\build-cache\\ed2cf81762fcf4aee861f153f6f450c9bfdbf2c2\\output\\res\\layout\\abc_screen_toolbar.xml"
     },
     {
         "merged": "C:\\Users\\arthu\\Downloads\\SmartFood\\mobile\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
         "source": "C:\\Users\\arthu\\.android\\build-cache\\ed2cf81762fcf4aee861f153f6f450c9bfdbf2c2\\output\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\arthu\\Downloads\\SmartFood\\mobile\\build\\intermediates\\res\\merged\\debug\\layout\\linha_post.xml",
+        "source": "C:\\Users\\arthu\\Downloads\\SmartFood\\mobile\\src\\main\\res\\layout\\linha_post.xml"
     },
     {
         "merged": "C:\\Users\\arthu\\Downloads\\SmartFood\\mobile\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",

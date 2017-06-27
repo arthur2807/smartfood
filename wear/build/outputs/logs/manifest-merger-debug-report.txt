@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:2:1-38:12
+ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:2:1-48:12
 	package
 		ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:3:5-43
 		INJECTED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml
@@ -18,7 +18,7 @@ ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:
 	android:name
 		ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:5:19-61
 application
-ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:7:5-36:19
+ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:7:5-46:19
 MERGED from [com.google.android.support:wearable:2.0.3] C:\Users\arthu\.android\build-cache\5a3343046241918dd184abe7d023ea6529f159dc\output\AndroidManifest.xml:6:3-8:17
 MERGED from [com.android.support:percent:25.2.0] C:\Users\arthu\.android\build-cache\5fea3aaad2f7f14c260cc7ae0ebc20c2592f5593\output\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-wearable:11.0.0] C:\Users\arthu\.android\build-cache\33be94f49addfdfa0ea9e182cd389652a62021ed\output\AndroidManifest.xml:18:5-19
@@ -58,7 +58,7 @@ ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:
 	android:name
 		ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:19:27-74
 activity#com.example.arthur.smartfood.MyDisplayActivity
-ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:22:9-27:81
+ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:22:9-27:72
 	android:exported
 		ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:25:13-36
 	android:theme
@@ -81,6 +81,12 @@ action#com.example.arthur.smartfood.SHOW_NOTIFICATION
 ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:33:17-89
 	android:name
 		ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:33:25-86
+activity#com.example.arthur.smartfood.MainActivity_teste
+ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:37:9-45:20
+	android:label
+		ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:39:13-62
+	android:name
+		ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:38:13-47
 uses-sdk
 INJECTED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.google.android.support:wearable:2.0.3] C:\Users\arthu\.android\build-cache\5a3343046241918dd184abe7d023ea6529f159dc\output\AndroidManifest.xml:4:3-70

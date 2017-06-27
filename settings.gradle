@@ -1,1 +1,1 @@
-include ':mobile', ':wear'
+include ':mobile', ':wear', ':universal-image-loader-1.8.6-with-sources'

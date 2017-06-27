@@ -304,12 +304,15 @@
     <string name="generic_cancel">Cancel</string>
     <string name="generic_yes">Yes</string>
     <string name="hello">Hello World!</string>
+    <string name="hello_round">Hello Round World!</string>
+    <string name="hello_square">Hello Square World!</string>
     <string name="navigation_drawer_content_description">Navigation drawer</string>
     <string name="notification_posted">Notification posted</string>
     <string name="time_difference_now">Now</string>
     <string name="time_difference_short_days_and_hours"><ns1:g example="3d" id="short_days">%1$s</ns1:g>\u0020<ns1:g example="13h" id="short_hours">%2$s</ns1:g></string>
     <string name="time_difference_short_hours_and_minutes"><ns1:g example="13h" id="short_hours">%1$s</ns1:g>\u0020<ns1:g example="58m" id="short_minutes">%2$s</ns1:g></string>
     <string name="title">Hello Notification!</string>
+    <string name="title_activity_main_teste">MainActivity_teste</string>
     <style name="ConfirmationActivity" parent="android:Theme.Translucent.NoTitleBar.Fullscreen">
 <item name="android:activityOpenEnterAnimation">@null</item>
 <item name="android:windowAnimationStyle">@null</item>

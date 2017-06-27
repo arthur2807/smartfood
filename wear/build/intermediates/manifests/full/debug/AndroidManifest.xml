@@ -40,6 +40,16 @@
             </intent-filter>
         </receiver>
 
+        <activity
+            android:name="com.example.arthur.smartfood.MainActivity_teste"
+            android:label="@string/title_activity_main_teste" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <uses-library
             android:name="com.google.android.wearable"
             android:required="false" />
