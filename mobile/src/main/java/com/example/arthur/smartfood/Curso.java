@@ -10,7 +10,7 @@ long id;
 	String imglink;
 boolean favorito;
 // Construtor usado no banco
-public Curso(int id_curso, String dc_curso, String imglink) {
+public Curso(long cd_curso, String dc_curso, String imglink) {
 	this( dc_curso, imglink);
 	this.cd_curso = cd_curso;
 }

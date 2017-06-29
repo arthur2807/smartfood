@@ -49,11 +49,11 @@ private DBHelper helper;
 		return values;
 	}
 
-	public int excluir(Curso produto) {
+	public int excluir(Curso curso) {
 		SQLiteDatabase db = helper.getWritableDatabase();
 
-		int rows = db.delete("cardapio", "_id = " + produto.id, null);
-		produto.favorito = false;
+		int rows = db.delete("curso", "cd_curso = " + curso.id, null);
+		curso.favorito = false;
 		db.close();
 
 		return rows;
@@ -80,34 +80,33 @@ private DBHelper helper;
 	
 	
 
-	public List<Produto> todosOsPosts() {
-		List<Produto> produtos = new ArrayList<Produto>();
+	public List<Curso> todosOsCursos() {
+		List<Curso> cursos = new ArrayList<Curso>();
 
 		SQLiteDatabase db = helper.getReadableDatabase();
 
 		Cursor cursor = db.rawQuery(
-				"select _id, title,content,thumbnail from cardapio", null);
+				"select cd_curso, dc_curso,imglink from curso", null);
 
 		while (cursor.moveToNext()) {
-			Produto post = preencherPost(cursor);
+			Curso curso = preencherCurso(cursor);
 
-			produtos.add(post);
+			cursos.add(curso);
 		}
 		cursor.close();
 		db.close();
-		return produtos;
+		return cursos;
 	}
 
-	private Produto preencherPost(Cursor cursor) {
-		long id = cursor.getLong(0);
-		String title = cursor.getString(1);
+	private Curso preencherCurso(Cursor cursor) {
+		long cd_curso = cursor.getLong(0);
+		String dc_curso = cursor.getString(1);
 
-		String content = cursor.getString(2);
-		String thumbnail = cursor.getString(3);
+		String imglink = cursor.getString(2);
 
-		Produto post = new Produto(id, title, thumbnail, content);
-		post.favorito = true;
+		Curso curso = new Curso(cd_curso, dc_curso, imglink);
+		curso.favorito = true;
 
-		return post;
+		return curso;
 	}
 }

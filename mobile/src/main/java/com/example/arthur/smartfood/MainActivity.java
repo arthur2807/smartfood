@@ -17,6 +17,7 @@ import com.example.arthur.smartfood.R;
 
 
 
+
 public class MainActivity extends ActionBarActivity 
 	implements TabListener, ClicouNoProduto, ProdutoNosFavoritos {
 
