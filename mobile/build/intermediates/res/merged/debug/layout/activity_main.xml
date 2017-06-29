@@ -4,5 +4,5 @@
     android:id="@+id/viewPager"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="br.edu.adenilson.pizzaria.MainActivity"
+    tools:context="com.example.arthur.smartfood.MainActivity"
     tools:ignore="MergeRootFrame" />
