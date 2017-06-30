@@ -1,132 +1,132 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:2:1-48:12
+ADDED from C:\Users\Marcos\SmartFood\wear\src\main\AndroidManifest.xml:2:1-48:12
 	package
-		ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:3:5-43
-		INJECTED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Marcos\SmartFood\wear\src\main\AndroidManifest.xml:3:5-43
+		INJECTED from C:\Users\Marcos\SmartFood\wear\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Marcos\SmartFood\wear\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Marcos\SmartFood\wear\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Marcos\SmartFood\wear\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\Marcos\SmartFood\wear\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
-		INJECTED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Marcos\SmartFood\wear\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Marcos\SmartFood\wear\src\main\AndroidManifest.xml
 uses-feature#android.hardware.type.watch
-ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:5:5-64
+ADDED from C:\Users\Marcos\SmartFood\wear\src\main\AndroidManifest.xml:5:5-64
 	android:name
-		ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:5:19-61
+		ADDED from C:\Users\Marcos\SmartFood\wear\src\main\AndroidManifest.xml:5:19-61
 application
-ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:7:5-46:19
-MERGED from [com.google.android.support:wearable:2.0.3] C:\Users\arthu\.android\build-cache\5a3343046241918dd184abe7d023ea6529f159dc\output\AndroidManifest.xml:6:3-8:17
-MERGED from [com.android.support:percent:25.2.0] C:\Users\arthu\.android\build-cache\5fea3aaad2f7f14c260cc7ae0ebc20c2592f5593\output\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-wearable:11.0.0] C:\Users\arthu\.android\build-cache\33be94f49addfdfa0ea9e182cd389652a62021ed\output\AndroidManifest.xml:18:5-19
-MERGED from [com.google.android.gms:play-services-base:11.0.0] C:\Users\arthu\.android\build-cache\9cded88a7981808dbaa43c36ba46f00955e9e4a3\output\AndroidManifest.xml:18:5-20:19
-MERGED from [com.google.android.gms:play-services-tasks:11.0.0] C:\Users\arthu\.android\build-cache\14f632cf4d54044c2f0e0c659b7fb7951402af6c\output\AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-basement:11.0.0] C:\Users\arthu\.android\build-cache\b92b11f5f6882a5516eb8ea9f42d3500dc6ce324\output\AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:support-v4:25.2.0] C:\Users\arthu\.android\build-cache\9ce3b27055cf0fb5131de2a9df66dc66683208f6\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\arthu\.android\build-cache\a9b2cf52af709e950b184060d2d02382f62ec530\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\arthu\.android\build-cache\1c2f8f82a1394aa192e0a08de77a64b7f039708d\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\arthu\.android\build-cache\bf40feb8d7a1568b7a67276ca51aa84c3177f47c\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\arthu\.android\build-cache\071950b71a8dd6be9d2abf75af6ff5a626994606\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:25.2.0] C:\Users\arthu\.android\build-cache\fa416dbbb034b51f78bd0385cfac0b808ecfd263\output\AndroidManifest.xml:25:5-20
+ADDED from C:\Users\Marcos\SmartFood\wear\src\main\AndroidManifest.xml:7:5-46:19
+MERGED from [com.google.android.support:wearable:2.0.3] C:\Users\Marcos\.android\build-cache\7831ac8d5e1f74caf435e681d39601fdfc8a31ee\output\AndroidManifest.xml:6:3-8:17
+MERGED from [com.android.support:percent:25.2.0] C:\Users\Marcos\.android\build-cache\985439cf8a2943d8fc6342d7313c365bddecb327\output\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-wearable:11.0.0] C:\Users\Marcos\.android\build-cache\ce45e1b0e0021203938d4a87f23a69df58bc2aea\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-base:11.0.0] C:\Users\Marcos\.android\build-cache\3ce34f5a16e3fce3d75260dae6c8158dd3681765\output\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-tasks:11.0.0] C:\Users\Marcos\.android\build-cache\f3b01da96e29e08a952b3bb577005b6f46d7084c\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:11.0.0] C:\Users\Marcos\.android\build-cache\a22611bbedf1fe8f2c7a1367cbaed66b73145f36\output\AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\Marcos\.android\build-cache\f3497e7d90cce7048daf25d201e3d253e9f1d183\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\Marcos\.android\build-cache\ce7826897ff311519f3dca048b10e91a9d22a3e0\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\Marcos\.android\build-cache\5ae96a027cbedb724daa9a57b21518a7a0d1f188\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\Marcos\.android\build-cache\cad43c17cbad9cfdc97bbf42c471e6d504d6d85f\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\Marcos\.android\build-cache\18518b0910a2b70caf166d29d2c5fdf10f34bab4\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\Marcos\.android\build-cache\e8cf72b21a939298691da67cb12b266354ec1ee3\output\AndroidManifest.xml:25:5-20
 	android:label
-		ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:10:9-41
+		ADDED from C:\Users\Marcos\SmartFood\wear\src\main\AndroidManifest.xml:10:9-41
 	android:supportsRtl
-		ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:11:9-35
+		ADDED from C:\Users\Marcos\SmartFood\wear\src\main\AndroidManifest.xml:11:9-35
 	android:allowBackup
-		ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:8:9-35
+		ADDED from C:\Users\Marcos\SmartFood\wear\src\main\AndroidManifest.xml:8:9-35
 	android:icon
-		ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:9:9-43
+		ADDED from C:\Users\Marcos\SmartFood\wear\src\main\AndroidManifest.xml:9:9-43
 	android:theme
-		ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:12:9-59
+		ADDED from C:\Users\Marcos\SmartFood\wear\src\main\AndroidManifest.xml:12:9-59
 activity#com.example.arthur.smartfood.MyStubBroadcastActivity
-ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:13:9-21:20
+ADDED from C:\Users\Marcos\SmartFood\wear\src\main\AndroidManifest.xml:13:9-21:20
 	android:label
-		ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:15:13-52
+		ADDED from C:\Users\Marcos\SmartFood\wear\src\main\AndroidManifest.xml:15:13-52
 	android:name
-		ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:14:13-52
+		ADDED from C:\Users\Marcos\SmartFood\wear\src\main\AndroidManifest.xml:14:13-52
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:16:13-20:29
+ADDED from C:\Users\Marcos\SmartFood\wear\src\main\AndroidManifest.xml:16:13-20:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:17:17-69
+ADDED from C:\Users\Marcos\SmartFood\wear\src\main\AndroidManifest.xml:17:17-69
 	android:name
-		ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:17:25-66
+		ADDED from C:\Users\Marcos\SmartFood\wear\src\main\AndroidManifest.xml:17:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:19:17-77
+ADDED from C:\Users\Marcos\SmartFood\wear\src\main\AndroidManifest.xml:19:17-77
 	android:name
-		ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:19:27-74
+		ADDED from C:\Users\Marcos\SmartFood\wear\src\main\AndroidManifest.xml:19:27-74
 activity#com.example.arthur.smartfood.MyDisplayActivity
-ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:22:9-27:72
+ADDED from C:\Users\Marcos\SmartFood\wear\src\main\AndroidManifest.xml:22:9-27:72
 	android:exported
-		ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:25:13-36
+		ADDED from C:\Users\Marcos\SmartFood\wear\src\main\AndroidManifest.xml:25:13-36
 	android:theme
-		ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:27:13-69
+		ADDED from C:\Users\Marcos\SmartFood\wear\src\main\AndroidManifest.xml:27:13-69
 	android:taskAffinity
-		ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:26:13-36
+		ADDED from C:\Users\Marcos\SmartFood\wear\src\main\AndroidManifest.xml:26:13-36
 	android:allowEmbedded
-		ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:24:13-41
+		ADDED from C:\Users\Marcos\SmartFood\wear\src\main\AndroidManifest.xml:24:13-41
 	android:name
-		ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:23:13-46
+		ADDED from C:\Users\Marcos\SmartFood\wear\src\main\AndroidManifest.xml:23:13-46
 receiver#com.example.arthur.smartfood.MyPostNotificationReceiver
-ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:29:9-35:20
+ADDED from C:\Users\Marcos\SmartFood\wear\src\main\AndroidManifest.xml:29:9-35:20
 	android:exported
-		ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:31:13-36
+		ADDED from C:\Users\Marcos\SmartFood\wear\src\main\AndroidManifest.xml:31:13-36
 	android:name
-		ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:30:13-55
+		ADDED from C:\Users\Marcos\SmartFood\wear\src\main\AndroidManifest.xml:30:13-55
 intent-filter#com.example.arthur.smartfood.SHOW_NOTIFICATION
-ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:32:13-34:29
+ADDED from C:\Users\Marcos\SmartFood\wear\src\main\AndroidManifest.xml:32:13-34:29
 action#com.example.arthur.smartfood.SHOW_NOTIFICATION
-ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:33:17-89
+ADDED from C:\Users\Marcos\SmartFood\wear\src\main\AndroidManifest.xml:33:17-89
 	android:name
-		ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:33:25-86
+		ADDED from C:\Users\Marcos\SmartFood\wear\src\main\AndroidManifest.xml:33:25-86
 activity#com.example.arthur.smartfood.MainActivity_teste
-ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:37:9-45:20
+ADDED from C:\Users\Marcos\SmartFood\wear\src\main\AndroidManifest.xml:37:9-45:20
 	android:label
-		ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:39:13-62
+		ADDED from C:\Users\Marcos\SmartFood\wear\src\main\AndroidManifest.xml:39:13-62
 	android:name
-		ADDED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml:38:13-47
+		ADDED from C:\Users\Marcos\SmartFood\wear\src\main\AndroidManifest.xml:38:13-47
 uses-sdk
-INJECTED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.google.android.support:wearable:2.0.3] C:\Users\arthu\.android\build-cache\5a3343046241918dd184abe7d023ea6529f159dc\output\AndroidManifest.xml:4:3-70
-MERGED from [com.android.support:percent:25.2.0] C:\Users\arthu\.android\build-cache\5fea3aaad2f7f14c260cc7ae0ebc20c2592f5593\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:25.2.0] C:\Users\arthu\.android\build-cache\3a5db5a26960a378015671f882ccb771e2d61da8\output\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-wearable:11.0.0] C:\Users\arthu\.android\build-cache\33be94f49addfdfa0ea9e182cd389652a62021ed\output\AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-base:11.0.0] C:\Users\arthu\.android\build-cache\9cded88a7981808dbaa43c36ba46f00955e9e4a3\output\AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-tasks:11.0.0] C:\Users\arthu\.android\build-cache\14f632cf4d54044c2f0e0c659b7fb7951402af6c\output\AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-basement:11.0.0] C:\Users\arthu\.android\build-cache\b92b11f5f6882a5516eb8ea9f42d3500dc6ce324\output\AndroidManifest.xml:17:5-43
-MERGED from [com.android.support:support-v4:25.2.0] C:\Users\arthu\.android\build-cache\9ce3b27055cf0fb5131de2a9df66dc66683208f6\output\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\arthu\.android\build-cache\a9b2cf52af709e950b184060d2d02382f62ec530\output\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\arthu\.android\build-cache\1c2f8f82a1394aa192e0a08de77a64b7f039708d\output\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\arthu\.android\build-cache\bf40feb8d7a1568b7a67276ca51aa84c3177f47c\output\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\arthu\.android\build-cache\071950b71a8dd6be9d2abf75af6ff5a626994606\output\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:25.2.0] C:\Users\arthu\.android\build-cache\fa416dbbb034b51f78bd0385cfac0b808ecfd263\output\AndroidManifest.xml:21:5-23:58
+INJECTED from C:\Users\Marcos\SmartFood\wear\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.google.android.support:wearable:2.0.3] C:\Users\Marcos\.android\build-cache\7831ac8d5e1f74caf435e681d39601fdfc8a31ee\output\AndroidManifest.xml:4:3-70
+MERGED from [com.android.support:percent:25.2.0] C:\Users\Marcos\.android\build-cache\985439cf8a2943d8fc6342d7313c365bddecb327\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.2.0] C:\Users\Marcos\.android\build-cache\cca0c71882085fb6a7c73fdc6a911c25e97a43f2\output\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-wearable:11.0.0] C:\Users\Marcos\.android\build-cache\ce45e1b0e0021203938d4a87f23a69df58bc2aea\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-base:11.0.0] C:\Users\Marcos\.android\build-cache\3ce34f5a16e3fce3d75260dae6c8158dd3681765\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tasks:11.0.0] C:\Users\Marcos\.android\build-cache\f3b01da96e29e08a952b3bb577005b6f46d7084c\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.0.0] C:\Users\Marcos\.android\build-cache\a22611bbedf1fe8f2c7a1367cbaed66b73145f36\output\AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\Marcos\.android\build-cache\f3497e7d90cce7048daf25d201e3d253e9f1d183\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\Marcos\.android\build-cache\ce7826897ff311519f3dca048b10e91a9d22a3e0\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\Marcos\.android\build-cache\5ae96a027cbedb724daa9a57b21518a7a0d1f188\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\Marcos\.android\build-cache\cad43c17cbad9cfdc97bbf42c471e6d504d6d85f\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\Marcos\.android\build-cache\18518b0910a2b70caf166d29d2c5fdf10f34bab4\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\Marcos\.android\build-cache\e8cf72b21a939298691da67cb12b266354ec1ee3\output\AndroidManifest.xml:21:5-23:58
 	tools:overrideLibrary
-		ADDED from [com.android.support:support-v4:25.2.0] C:\Users\arthu\.android\build-cache\9ce3b27055cf0fb5131de2a9df66dc66683208f6\output\AndroidManifest.xml:23:9-51
+		ADDED from [com.android.support:support-v4:25.2.0] C:\Users\Marcos\.android\build-cache\f3497e7d90cce7048daf25d201e3d253e9f1d183\output\AndroidManifest.xml:23:9-51
 	android:targetSdkVersion
-		INJECTED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Marcos\SmartFood\wear\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Marcos\SmartFood\wear\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\arthu\Downloads\SmartFood\wear\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Marcos\SmartFood\wear\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Marcos\SmartFood\wear\src\main\AndroidManifest.xml
 uses-library#com.google.android.wearable
-ADDED from [com.google.android.support:wearable:2.0.3] C:\Users\arthu\.android\build-cache\5a3343046241918dd184abe7d023ea6529f159dc\output\AndroidManifest.xml:7:5-88
+ADDED from [com.google.android.support:wearable:2.0.3] C:\Users\Marcos\.android\build-cache\7831ac8d5e1f74caf435e681d39601fdfc8a31ee\output\AndroidManifest.xml:7:5-88
 	android:required
-		ADDED from [com.google.android.support:wearable:2.0.3] C:\Users\arthu\.android\build-cache\5a3343046241918dd184abe7d023ea6529f159dc\output\AndroidManifest.xml:7:62-86
+		ADDED from [com.google.android.support:wearable:2.0.3] C:\Users\Marcos\.android\build-cache\7831ac8d5e1f74caf435e681d39601fdfc8a31ee\output\AndroidManifest.xml:7:62-86
 	android:name
-		ADDED from [com.google.android.support:wearable:2.0.3] C:\Users\arthu\.android\build-cache\5a3343046241918dd184abe7d023ea6529f159dc\output\AndroidManifest.xml:7:19-61
+		ADDED from [com.google.android.support:wearable:2.0.3] C:\Users\Marcos\.android\build-cache\7831ac8d5e1f74caf435e681d39601fdfc8a31ee\output\AndroidManifest.xml:7:19-61
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:11.0.0] C:\Users\arthu\.android\build-cache\9cded88a7981808dbaa43c36ba46f00955e9e4a3\output\AndroidManifest.xml:19:9-172
+ADDED from [com.google.android.gms:play-services-base:11.0.0] C:\Users\Marcos\.android\build-cache\3ce34f5a16e3fce3d75260dae6c8158dd3681765\output\AndroidManifest.xml:19:9-172
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:11.0.0] C:\Users\arthu\.android\build-cache\9cded88a7981808dbaa43c36ba46f00955e9e4a3\output\AndroidManifest.xml:19:146-170
+		ADDED from [com.google.android.gms:play-services-base:11.0.0] C:\Users\Marcos\.android\build-cache\3ce34f5a16e3fce3d75260dae6c8158dd3681765\output\AndroidManifest.xml:19:146-170
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:11.0.0] C:\Users\arthu\.android\build-cache\9cded88a7981808dbaa43c36ba46f00955e9e4a3\output\AndroidManifest.xml:19:86-145
+		ADDED from [com.google.android.gms:play-services-base:11.0.0] C:\Users\Marcos\.android\build-cache\3ce34f5a16e3fce3d75260dae6c8158dd3681765\output\AndroidManifest.xml:19:86-145
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:11.0.0] C:\Users\arthu\.android\build-cache\9cded88a7981808dbaa43c36ba46f00955e9e4a3\output\AndroidManifest.xml:19:19-85
+		ADDED from [com.google.android.gms:play-services-base:11.0.0] C:\Users\Marcos\.android\build-cache\3ce34f5a16e3fce3d75260dae6c8158dd3681765\output\AndroidManifest.xml:19:19-85
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:11.0.0] C:\Users\arthu\.android\build-cache\b92b11f5f6882a5516eb8ea9f42d3500dc6ce324\output\AndroidManifest.xml:20:9-121
+ADDED from [com.google.android.gms:play-services-basement:11.0.0] C:\Users\Marcos\.android\build-cache\a22611bbedf1fe8f2c7a1367cbaed66b73145f36\output\AndroidManifest.xml:20:9-121
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:11.0.0] C:\Users\arthu\.android\build-cache\b92b11f5f6882a5516eb8ea9f42d3500dc6ce324\output\AndroidManifest.xml:20:66-119
+		ADDED from [com.google.android.gms:play-services-basement:11.0.0] C:\Users\Marcos\.android\build-cache\a22611bbedf1fe8f2c7a1367cbaed66b73145f36\output\AndroidManifest.xml:20:66-119
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:11.0.0] C:\Users\arthu\.android\build-cache\b92b11f5f6882a5516eb8ea9f42d3500dc6ce324\output\AndroidManifest.xml:20:20-65
+		ADDED from [com.google.android.gms:play-services-basement:11.0.0] C:\Users\Marcos\.android\build-cache\a22611bbedf1fe8f2c7a1367cbaed66b73145f36\output\AndroidManifest.xml:20:20-65

@@ -12,13 +12,11 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBar.Tab;
 import android.support.v7.app.ActionBar.TabListener;
 import android.support.v7.app.ActionBarActivity;
-import com.example.arthur.smartfood.DetalheFragment.ProdutoNosFavoritos;
-import com.example.arthur.smartfood.R;
+import com.example.arthur.smartfood.DetalheFragment.TrumaNosFavoritos;
 
 
-
-public class MainActivity extends ActionBarActivity 
-	implements TabListener, ClicouNoProduto, ProdutoNosFavoritos {
+public class MainActivity extends ActionBarActivity
+	implements TabListener, ClicouNoProduto, TrumaNosFavoritos {
 
 	ListProdutoFragment fragment1;
 	ListFavoritesProdutoFragment fragment2;
@@ -86,7 +84,7 @@ public class MainActivity extends ActionBarActivity
 			getSupportFragmentManager()
 				.beginTransaction()
 				.replace(R.id.detail, d)
-				.commit();			
+				.commit();
 		} else {
 			Intent it = new Intent(this, DetalheActivity.class);
 			it.putExtra("produto", produto);
@@ -95,7 +93,7 @@ public class MainActivity extends ActionBarActivity
 	}
 
 	@Override
-	public void produtoAdicionadoAoFavorito(Produto produto) {
+	public void trumaAdicionadoAoFavorito(Produto produto) {
 		fragment2.refreshList();
 		
 	}
