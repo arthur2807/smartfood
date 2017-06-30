@@ -6,10 +6,12 @@ public class Produto implements Serializable{
 String nome;
 String imagem;
 String descricao;
+	String dc_curso;
+			long cd_curso;
 long id;
 boolean favorito;
 // Construtor usado no banco
-public Produto(long id, String nome,  String descricao,String imagem) {
+public Produto(long id, String nome,String imagem,  String descricao) {
 	this(nome, descricao, imagem);
 	this.id = id;
 	

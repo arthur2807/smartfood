@@ -19,7 +19,7 @@ public static List<Produto> retrievePosts() throws Exception{
 		
 		//URL url = new URL("https://dl.dropbox.com/s/cp048f8mv3ncak9/lendo.json");
 		//https://www.dropbox.com/s/e6isyozd0zj8rcw/produt.json
-	URL url = new URL("https://dl.dropbox.com/s/e6isyozd0zj8rcw/produt.json");
+	URL url = new URL("http://appagenda.comeze.com/php/GetCursos.php");
 		HttpURLConnection conexao = (HttpURLConnection)
 				url.openConnection();
 		conexao.setRequestMethod("GET");
@@ -40,12 +40,12 @@ public static List<Produto> retrievePosts() throws Exception{
 		JSONObject json = new JSONObject(
 				bytesToString(inputStream));
 
-		JSONArray jsonEquipes = json.getJSONArray("PESSOA");
+		JSONArray jsonEquipes = json.getJSONArray("cursos");
 		for (int i = 0; i < jsonEquipes.length(); i++) {
 			JSONObject jsonEquipe = jsonEquipes.getJSONObject(i);
 			Produto produto = new Produto(
 					jsonEquipe.getString("nome"),
-					jsonEquipe.getString("imagem"),jsonEquipe.getString("descricaoo"));
+					jsonEquipe.getString("imglink"),jsonEquipe.getString("descricaoo"));
 			produtos.add(produto);
 		}	
 		return produtos;
