@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\arthu\\Downloads\\SmartFood\\mobile\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+        "outputFile": "C:\\Users\\Marcos\\SmartFood\\mobile\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 96
                 },
                 "from": {
-                    "file": "C:\\Users\\arthu\\.android\\build-cache\\85e3459eb8d2a3df0d8d55737ba3df5d6f4522c8\\output\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Marcos\\.android\\build-cache\\34391da895987934975292abf75d38d169a075b7\\output\\res\\values\\values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
