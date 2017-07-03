@@ -6,8 +6,6 @@ public class Produto implements Serializable{
 String nome;
 String imagem;
 long id;
-boolean favorito;
-
 
 // Construtor usado no banco
 public Produto(long id, String nome,String imagem) {
