@@ -9,9 +9,9 @@ public class DetalheActivity extends ActionBarActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
-		Produto produto = (Produto)getIntent().getSerializableExtra("produto");
+		Turma turma = (Turma) getIntent().getSerializableExtra("truma");
 		
-		DetalheFragment d = DetalheFragment.novaInstancia(produto);
+		DetalheFragment d = DetalheFragment.novaInstancia(turma);
 		
 		getSupportFragmentManager()
 			.beginTransaction()

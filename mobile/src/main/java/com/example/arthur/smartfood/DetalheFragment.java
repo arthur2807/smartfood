@@ -1,6 +1,5 @@
 package com.example.arthur.smartfood;
 
-import com.example.arthur.smartfood.R;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBarActivity;
@@ -18,15 +17,15 @@ import android.widget.Toast;
 
 public class DetalheFragment extends Fragment {
 
-	Produto produto;
+	Turma turma;
 	ProdutoDB db;
 	TextView txtTitulo;
 	WebView webViewConteudo;
 	Button btnFavorito;
 	
-	public static DetalheFragment novaInstancia(Produto produto){
+	public static DetalheFragment novaInstancia(Turma turma){
 		Bundle args = new Bundle();
-		args.putSerializable("produto", produto);
+		args.putSerializable("truma", turma);
 		
 		DetalheFragment f = new DetalheFragment();
 		f.setArguments(args);
@@ -51,10 +50,10 @@ public class DetalheFragment extends Fragment {
 		WebSettings settings = webViewConteudo.getSettings();
 		settings.setDefaultTextEncodingName("UTF-8");
 		
-		produto = (Produto)getArguments().getSerializable("produto");
-		produto.favorito = db.favorito(produto);
-		txtTitulo.setText(produto.nome);
-		webViewConteudo.loadDataWithBaseURL(null, produto.descricao, "text/html", "UTF-8", null);
+		turma = (Turma)getArguments().getSerializable("truma");
+		turma.favorito = db.favorito(turma);
+		txtTitulo.setText(turma.dc_turma);
+		webViewConteudo.loadDataWithBaseURL(null, turma.dc_horario_turma, "text/html", "UTF-8", null);
 		return layout;
 	}
 	
@@ -64,7 +63,7 @@ public class DetalheFragment extends Fragment {
 		inflater.inflate(R.menu.detalhe, menu);
 		
 		MenuItem item = menu.findItem(R.id.action_favoritos);
-		if (produto.favorito){
+		if (turma.favorito){
 			item.setIcon(android.R.drawable.ic_menu_delete);
 		} else {
 			item.setIcon(android.R.drawable.ic_menu_save);
@@ -75,16 +74,16 @@ public class DetalheFragment extends Fragment {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		if (item.getItemId() == R.id.action_favoritos){
 			
-			if (produto.favorito){
-				db.excluir(produto);
+			if (turma.favorito){
+				db.excluir(turma);
 				Toast.makeText(getActivity(), "Removido dos favoritos", Toast.LENGTH_SHORT).show();
 			} else {
-				db.inserir(produto);
+				db.inserir(turma);
 				Toast.makeText(getActivity(), "Adicionado aos favoritos", Toast.LENGTH_SHORT).show();
 			}
 			
-			if (getActivity() instanceof ProdutoNosFavoritos){
-				((ProdutoNosFavoritos)getActivity()).produtoAdicionadoAoFavorito(produto);
+			if (getActivity() instanceof TrumaNosFavoritos){
+				((TrumaNosFavoritos)getActivity()).trumaAdicionadoAoFavorito(turma);
 			}
 			
 			((ActionBarActivity)getActivity()).supportInvalidateOptionsMenu();
@@ -92,8 +91,7 @@ public class DetalheFragment extends Fragment {
 		return super.onOptionsItemSelected(item);
 	}
 	
-	interface ProdutoNosFavoritos {
-		void produtoAdicionadoAoFavorito(Produto produto);
+	interface TrumaNosFavoritos {
+		void trumaAdicionadoAoFavorito(Turma turma);
 	}
-	
 }

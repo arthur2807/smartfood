@@ -16,7 +16,7 @@ private DBHelper helper;
 		helper = new DBHelper(contexto);
 	}
 
-	public long inserir(Produto produto) {
+	/*public long inserir(Produto produto) {
 		SQLiteDatabase db = helper.getWritableDatabase();
 
 		ContentValues values = valoresPorPost(produto);
@@ -26,7 +26,20 @@ private DBHelper helper;
 		produto.favorito = true;
 		db.close();
 		return id;
-	}
+	}*/
+
+
+    public long inserir(Produto produto) {
+        SQLiteDatabase db = helper.getWritableDatabase();
+
+        ContentValues values = valoresPorPost(produto);
+
+        long id = db.insert("curso", null, values);
+        produto.id = id;
+        produto.favorito = true;
+        db.close();
+        return id;
+    }
 
 	private ContentValues valoresPorPost(Produto produto) {
 		ContentValues values = new ContentValues();
