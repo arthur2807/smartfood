@@ -49,6 +49,29 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.example.arthur.smartfood.MyStubBroadcastActivity2"
+            android:label="MyStubBroadcastActivity2" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.arthur.smartfood.MyDisplayActivity2"
+            android:allowEmbedded="true"
+            android:exported="true"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.DeviceDefault.Light" />
+
+        <receiver
+            android:name="com.example.arthur.smartfood.MyPostNotificationReceiver2"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.example.arthur.smartfood.SHOW_NOTIFICATION" />
+            </intent-filter>
+        </receiver>
 
         <uses-library
             android:name="com.google.android.wearable"
