@@ -1,26 +1,26 @@
 [
     {
-        "merged": "C:\\Users\\arthu\\Downloads\\SmartFood\\mobile\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_custom.xml",
-        "source": "C:\\Users\\arthu\\.android\\build-cache\\ed2cf81762fcf4aee861f153f6f450c9bfdbf2c2\\output\\res\\layout-v11\\notification_template_big_media_custom.xml"
+        "merged": "C:\\Users\\Marcos\\SmartFood\\mobile\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_action.xml",
+        "source": "C:\\Users\\Marcos\\.android\\build-cache\\4a5cc53dac6a1efc31b6a3584ee11a248988dc4e\\output\\res\\layout-v11\\notification_media_action.xml"
     },
     {
-        "merged": "C:\\Users\\arthu\\Downloads\\SmartFood\\mobile\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_cancel_action.xml",
-        "source": "C:\\Users\\arthu\\.android\\build-cache\\ed2cf81762fcf4aee861f153f6f450c9bfdbf2c2\\output\\res\\layout-v11\\notification_media_cancel_action.xml"
+        "merged": "C:\\Users\\Marcos\\SmartFood\\mobile\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_custom.xml",
+        "source": "C:\\Users\\Marcos\\.android\\build-cache\\4a5cc53dac6a1efc31b6a3584ee11a248988dc4e\\output\\res\\layout-v11\\notification_template_big_media_custom.xml"
     },
     {
-        "merged": "C:\\Users\\arthu\\Downloads\\SmartFood\\mobile\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media.xml",
-        "source": "C:\\Users\\arthu\\.android\\build-cache\\ed2cf81762fcf4aee861f153f6f450c9bfdbf2c2\\output\\res\\layout-v11\\notification_template_big_media.xml"
+        "merged": "C:\\Users\\Marcos\\SmartFood\\mobile\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_cancel_action.xml",
+        "source": "C:\\Users\\Marcos\\.android\\build-cache\\4a5cc53dac6a1efc31b6a3584ee11a248988dc4e\\output\\res\\layout-v11\\notification_media_cancel_action.xml"
     },
     {
-        "merged": "C:\\Users\\arthu\\Downloads\\SmartFood\\mobile\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow_custom.xml",
-        "source": "C:\\Users\\arthu\\.android\\build-cache\\ed2cf81762fcf4aee861f153f6f450c9bfdbf2c2\\output\\res\\layout-v11\\notification_template_big_media_narrow_custom.xml"
+        "merged": "C:\\Users\\Marcos\\SmartFood\\mobile\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media.xml",
+        "source": "C:\\Users\\Marcos\\.android\\build-cache\\4a5cc53dac6a1efc31b6a3584ee11a248988dc4e\\output\\res\\layout-v11\\notification_template_big_media.xml"
     },
     {
-        "merged": "C:\\Users\\arthu\\Downloads\\SmartFood\\mobile\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow.xml",
-        "source": "C:\\Users\\arthu\\.android\\build-cache\\ed2cf81762fcf4aee861f153f6f450c9bfdbf2c2\\output\\res\\layout-v11\\notification_template_big_media_narrow.xml"
+        "merged": "C:\\Users\\Marcos\\SmartFood\\mobile\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow_custom.xml",
+        "source": "C:\\Users\\Marcos\\.android\\build-cache\\4a5cc53dac6a1efc31b6a3584ee11a248988dc4e\\output\\res\\layout-v11\\notification_template_big_media_narrow_custom.xml"
     },
     {
-        "merged": "C:\\Users\\arthu\\Downloads\\SmartFood\\mobile\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_action.xml",
-        "source": "C:\\Users\\arthu\\.android\\build-cache\\ed2cf81762fcf4aee861f153f6f450c9bfdbf2c2\\output\\res\\layout-v11\\notification_media_action.xml"
+        "merged": "C:\\Users\\Marcos\\SmartFood\\mobile\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow.xml",
+        "source": "C:\\Users\\Marcos\\.android\\build-cache\\4a5cc53dac6a1efc31b6a3584ee11a248988dc4e\\output\\res\\layout-v11\\notification_template_big_media_narrow.xml"
     }
 ]

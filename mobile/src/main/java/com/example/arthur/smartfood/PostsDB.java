@@ -30,21 +30,6 @@ public class PostsDB {
 		return id;
 	}
 
-
-    public long inserir(Post post){
-        SQLiteDatabase db = helper.getWritableDatabase();
-
-        ContentValues values = valoresPorPost(post);
-
-        long id = db.insert("posts", null, values);
-        post.id = id;
-        post.favorito = true;
-
-        db.close();
-
-        return id;
-    }
-
 	private ContentValues valoresPorPost(Post post) {
 		ContentValues values = new ContentValues();
 		values.put("title", post.title);
