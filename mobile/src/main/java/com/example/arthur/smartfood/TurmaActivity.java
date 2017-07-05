@@ -8,36 +8,57 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.SimpleOnPageChangeListener;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBar.Tab;
 import android.support.v7.app.ActionBar.TabListener;
 import android.support.v7.app.ActionBarActivity;
+
+import static android.content.Intent.getIntent;
 
 
 public class TurmaActivity extends ActionBarActivity
 	implements TabListener, ClicouNaTurma {
 
-	ListProdutoFragment fragment1;
+	ListTrumaFragment fragment1 ;
 	ListFavoritesProdutoFragment fragment2;
 	ViewPager pager;
+	Curso curso;
 
-	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_truma);
+		curso = (Curso) getIntent().getSerializableExtra("curso");
 
-		fragment1 = new ListProdutoFragment();
+		fragment1 = new ListTrumaFragment().novaInstancia(curso);
 		fragment2 = new ListFavoritesProdutoFragment();
+
+		final ActionBar actionBar = getSupportActionBar();
 
 		pager = (ViewPager)findViewById(R.id.viewPagerTurma);
 		FragmentManager fm = getSupportFragmentManager();
-		pager.setAdapter(new MeuAdapter(fm));
+		pager.setAdapter(new TurmaActivity.MeuAdapter(fm));
 		pager.setOnPageChangeListener(new SimpleOnPageChangeListener(){
 			@Override
 			public void onPageSelected(int position) {
 				super.onPageSelected(position);
+				actionBar.setSelectedNavigationItem(position);
 			}
 		});
+
+		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
+
+		Tab aba1 = actionBar.newTab();
+		aba1.setText("Turma");
+		aba1.setTabListener(this);
+
+		Tab aba2 = actionBar.newTab();
+		aba2.setText("Minhas Turma");
+		aba2.setTabListener(this);
+
+		actionBar.addTab(aba1);
+		actionBar.addTab(aba2);
 	}
+
 
 	@Override
 	public void onTabReselected(Tab arg0, FragmentTransaction arg1) {
@@ -74,15 +95,12 @@ public class TurmaActivity extends ActionBarActivity
 		}		
 	}
 
-	@Override
-	public void produtoAdicionadoAoFavorito(Produto produto) {
-		fragment2.refreshList();
-		
-	}
-
-	@Override
-	public void turmaFoiClicado(Turma turma) {
-
+	public static TurmaActivity novaInstancia(Curso curso){
+		Bundle args = new Bundle();
+		args.putSerializable("curso", curso);
+		TurmaActivity f = new TurmaActivity();
+		//f.setArguments(args);
+		return f;
 	}
 
 	class MeuAdapter extends FragmentPagerAdapter {
@@ -96,7 +114,7 @@ public class TurmaActivity extends ActionBarActivity
 			if (position == 0){
 				return fragment1;
 			}
-			return fragment2;
+				return fragment2;
 		}
 
 		@Override

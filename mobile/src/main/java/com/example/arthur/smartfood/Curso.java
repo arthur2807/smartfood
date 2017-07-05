@@ -5,8 +5,7 @@ import java.io.Serializable;
 public class Curso implements Serializable{
 
 	String dc_curso;
-			long cd_curso;
-long id;
+	long cd_curso;
 	String imglink;
 boolean favorito;
 // Construtor usado no banco

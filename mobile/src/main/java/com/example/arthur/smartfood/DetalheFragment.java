@@ -18,7 +18,7 @@ import android.widget.Toast;
 public class DetalheFragment extends Fragment {
 
 	Turma turma;
-	ProdutoDB db;
+	CursoDB db;
 	TextView txtTitulo;
 	WebView webViewConteudo;
 	Button btnFavorito;
@@ -26,7 +26,6 @@ public class DetalheFragment extends Fragment {
 	public static DetalheFragment novaInstancia(Turma turma){
 		Bundle args = new Bundle();
 		args.putSerializable("truma", turma);
-		
 		DetalheFragment f = new DetalheFragment();
 		f.setArguments(args);
 		return f;
@@ -36,7 +35,7 @@ public class DetalheFragment extends Fragment {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setHasOptionsMenu(true);
-		db = new ProdutoDB(getActivity());
+		db = new CursoDB(getActivity());
 	}
 	
 	@Override
@@ -51,7 +50,7 @@ public class DetalheFragment extends Fragment {
 		settings.setDefaultTextEncodingName("UTF-8");
 		
 		turma = (Turma)getArguments().getSerializable("truma");
-		turma.favorito = db.favorito(turma);
+		//turma.favorito = db.favorito(turma);
 		txtTitulo.setText(turma.dc_turma);
 		webViewConteudo.loadDataWithBaseURL(null, turma.dc_horario_turma, "text/html", "UTF-8", null);
 		return layout;
@@ -74,13 +73,13 @@ public class DetalheFragment extends Fragment {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		if (item.getItemId() == R.id.action_favoritos){
 			
-			if (turma.favorito){
+			/*if (turma.favorito){
 				db.excluir(turma);
 				Toast.makeText(getActivity(), "Removido dos favoritos", Toast.LENGTH_SHORT).show();
 			} else {
 				db.inserir(turma);
 				Toast.makeText(getActivity(), "Adicionado aos favoritos", Toast.LENGTH_SHORT).show();
-			}
+			}*/
 			
 			if (getActivity() instanceof TrumaNosFavoritos){
 				((TrumaNosFavoritos)getActivity()).trumaAdicionadoAoFavorito(turma);

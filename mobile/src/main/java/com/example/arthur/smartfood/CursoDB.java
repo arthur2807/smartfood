@@ -52,25 +52,25 @@ private DBHelper helper;
 	public int excluir(Curso curso) {
 		SQLiteDatabase db = helper.getWritableDatabase();
 
-		int rows = db.delete("curso", "cd_curso = " + curso.id, null);
+		int rows = db.delete("curso", "cd_curso = " + curso.cd_curso, null);
 		curso.favorito = false;
 		db.close();
 
 		return rows;
 	}
 
-	public boolean favorito(Produto produto) {
+	public boolean favorito(Curso curso) {
 		SQLiteDatabase db = helper.getReadableDatabase();
 
 		Cursor cursor = db
 				.rawQuery(
 						"select _id,title, content,thumbnail from cardapio where title = ?",
-						new String[] { produto.nome });
+						new String[] { curso.dc_curso });
 
 		boolean resultado = false;
 		if (cursor != null && cursor.getCount() > 0) {
 			cursor.moveToNext();
-			produto.id = cursor.getLong(cursor.getColumnIndex("_id"));
+			curso.cd_curso = cursor.getLong(cursor.getColumnIndex("_id"));
 			resultado = true;
 		}
 		cursor.close();

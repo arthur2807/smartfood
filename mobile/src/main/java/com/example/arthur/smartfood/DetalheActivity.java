@@ -16,7 +16,7 @@ public class DetalheActivity extends ActionBarActivity {
 		getSupportFragmentManager()
 			.beginTransaction()
 			.replace(android.R.id.content, d)
-			.commit();			
+			.commit();
 	}
 }
 //content
