@@ -7,8 +7,8 @@ import java.io.Serializable;
  */
 
 public class Turma implements Serializable {
-    long    cd_turma;
-    String  dc_turma;
+    long cd_turma;
+    String dc_turma;
     Curso cd_curso;
     String  dc_horario_turma;
     boolean  favorito;

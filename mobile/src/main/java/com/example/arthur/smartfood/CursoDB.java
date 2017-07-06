@@ -29,48 +29,59 @@ private DBHelper helper;
 	}*/
 
 
-    public long inserir(Curso curso) {
+    public long inserir(Turma turma) {
         SQLiteDatabase db = helper.getWritableDatabase();
+		Curso curso = turma.cd_curso;
+        ContentValues valuesturma = valoresTurma(turma);
+		ContentValues valuesCurso = valoresCurso(curso);
 
-        ContentValues values = valoresPorPost(curso);
-
-        long id = db.insert	("curso", null, values);
-        curso.cd_curso = id;
-        curso.favorito = true;
-        db.close();
-        return id;
+        db.insert ("turma", null, valuesturma);
+		db.insert("curso",null, valuesCurso);
+		turma.favorito = true;
+		db.close();
+        return turma.cd_turma;
     }
 
-	private ContentValues valoresPorPost(Curso curso) {
+	private ContentValues valoresTurma(Turma turma) {
 		ContentValues values = new ContentValues();
-		values.put("cd_curso", curso.cd_curso);
-		values.put("descricao", curso.dc_curso);
-		values.put("imglink", curso.imglink);
+		values.put("cd_turma", turma.cd_turma);
+		values.put("dc_turma", turma.dc_turma);
+		values.put("cd_curso", turma.cd_curso.cd_curso);
+		values.put("dc_horario_turma", turma.dc_horario_turma);
 		return values;
 	}
 
-	public int excluir(Curso curso) {
-		SQLiteDatabase db = helper.getWritableDatabase();
+	private ContentValues valoresCurso(Curso curso){
+		ContentValues values = new ContentValues();
+		values.put("cd_curso", curso.cd_curso);
+		values.put("dc_curso", curso.dc_curso);
+		values.put("imglink",  curso.imglink);
+		return values;
+	}
 
+	public int excluir(Turma turma) {
+		SQLiteDatabase db = helper.getWritableDatabase();
+		Curso curso = turma.cd_curso;
 		int rows = db.delete("curso", "cd_curso = " + curso.cd_curso, null);
-		curso.favorito = false;
+		rows += db.delete("turma", "cd_turma = " + turma.cd_turma,null);
+		turma.favorito = false;
 		db.close();
 
 		return rows;
 	}
 
-	public boolean favorito(Curso curso) {
+	public boolean favorito(Turma turma) {
 		SQLiteDatabase db = helper.getReadableDatabase();
 
 		Cursor cursor = db
 				.rawQuery(
-						"select _id,title, content,thumbnail from cardapio where title = ?",
-						new String[] { curso.dc_curso });
+						"select cd_turma, dc_turma, cd_curso, dc_horario_turma from turma where cd_turma = ?",
+						new String[]{String.valueOf(turma.cd_turma)});
 
 		boolean resultado = false;
 		if (cursor != null && cursor.getCount() > 0) {
 			cursor.moveToNext();
-			curso.cd_curso = cursor.getLong(cursor.getColumnIndex("_id"));
+			turma.cd_turma = cursor.getLong(cursor.getColumnIndex("cd_turma"));
 			resultado = true;
 		}
 		cursor.close();
@@ -80,33 +91,45 @@ private DBHelper helper;
 	
 	
 
-	public List<Curso> todosOsCursos() {
-		List<Curso> cursos = new ArrayList<Curso>();
+	public List<Turma> todosTurmas() {
+		List<Turma> turmas = new ArrayList<Turma>();
 
 		SQLiteDatabase db = helper.getReadableDatabase();
 
-		Cursor cursor = db.rawQuery(
-				"select cd_curso, dc_curso,imglink from curso", null);
+		/*Cursor cursorC = db.rawQuery(
+				"select c.cd_curso, c.dc_curso,c.imglink from curso c", null);*/
+		Cursor cursorT = db.rawQuery(
+				"select c.cd_curso, c.dc_curso,c.imglink ,t.cd_turma ,t.dc_turma ,t.cd_curso ,t.dc_horario_turma " +
+						"from turma t, curso c", null);
 
-		while (cursor.moveToNext()) {
-			Curso curso = preencherCurso(cursor);
-
-			cursos.add(curso);
+		while (cursorT.moveToNext()) {
+			//Curso curso = preencherCurso(cursorC);
+			Turma turma = preencherTurma(cursorT);
+			turmas.add(turma);
 		}
-		cursor.close();
+		//cursorC.close();
+		cursorT.close();
 		db.close();
-		return cursos;
+		return turmas;
 	}
 
-	private Curso preencherCurso(Cursor cursor) {
+	private Turma preencherTurma(Cursor cursorT) {
+		Curso curso = new Curso(cursorT.getLong(0),
+								cursorT.getString(1),
+								cursorT.getString(2));
+		Turma turma = new Turma(cursorT.getLong(3),
+								cursorT.getString(4),
+								curso,
+								cursorT.getString(6));
+		return turma;
+	}
+
+	/*private Curso preencherCurso(Cursor cursor) {
 		long cd_curso = cursor.getLong(0);
 		String dc_curso = cursor.getString(1);
-
 		String imglink = cursor.getString(2);
-
 		Curso curso = new Curso(cd_curso, dc_curso, imglink);
 		curso.favorito = true;
-
 		return curso;
-	}
+	}*/
 }

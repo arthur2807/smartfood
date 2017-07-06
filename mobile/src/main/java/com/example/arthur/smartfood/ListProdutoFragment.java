@@ -80,10 +80,6 @@ public class ListProdutoFragment extends ListFragment {
 	}
 
 	private void refreshList() {
-		// ArrayAdapter<Post> adapter = new ArrayAdapter<Post>(
-		// getActivity(),
-		// android.R.layout.simple_list_item_1,
-		// posts);
 		CursoAdapter adapter = new CursoAdapter(getActivity(), cursos);
 		setListAdapter(adapter);
 	}

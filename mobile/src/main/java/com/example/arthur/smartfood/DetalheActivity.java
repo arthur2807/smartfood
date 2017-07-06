@@ -9,7 +9,7 @@ public class DetalheActivity extends ActionBarActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
-		Turma turma = (Turma) getIntent().getSerializableExtra("truma");
+		Turma turma = (Turma) getIntent().getSerializableExtra("turma");
 		
 		DetalheFragment d = DetalheFragment.novaInstancia(turma);
 		

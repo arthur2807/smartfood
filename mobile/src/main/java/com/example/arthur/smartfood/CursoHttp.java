@@ -65,7 +65,7 @@ public static List<Curso> retrievePosts() throws Exception{
 
 	public static List<Turma> turmasJson(Curso curso) throws Exception{
 
-		URL url = new URL("http://appagenda.comeze.com/php/GetTurmas.php?cd_curso="+ curso.cd_curso);
+		URL url = new URL("http://appagenda.comeze.com/php/GetTurma.php?cdcursos="+ curso.cd_curso);
 		HttpURLConnection conexao = (HttpURLConnection)
 				url.openConnection();
 		conexao.setRequestMethod("GET");
@@ -73,12 +73,12 @@ public static List<Curso> retrievePosts() throws Exception{
 		conexao.connect();
 
 		if (conexao.getResponseCode() == 200){ // se net estever OK
-			return parseTurmaJson(conexao.getInputStream());
+			return parseTurmaJson(conexao.getInputStream(),curso);
 		}
 		return null;
 	}
 
-	private static List<Turma> parseTurmaJson(InputStream inputStream)
+	private static List<Turma> parseTurmaJson(InputStream inputStream, Curso curso)
 			throws JSONException, Exception {
 
 		List<Turma> turmas = new ArrayList<>();
@@ -86,18 +86,25 @@ public static List<Curso> retrievePosts() throws Exception{
 		JSONObject json = new JSONObject(
 				bytesToString(inputStream));
 
-		JSONArray jsonEquipes = json.getJSONArray("turmas");
+		JSONArray jsonEquipes = json.getJSONArray("turma");
 		for (int i = 0; i < jsonEquipes.length(); i++) {
 			JSONObject jsonEquipe = jsonEquipes.getJSONObject(i);
 			Turma turma = new Turma(
-					jsonEquipe.getString("dc_turma"),
-					(new Curso( Long.parseLong(jsonEquipe.getString("cd_curso")),
-							jsonEquipe.getString("dc_curso"),
-							jsonEquipe.getString("imglink")
-							)),
-					jsonEquipe.getString("dc_horario_turma"));
+					Long.parseLong(jsonEquipe.getString("cd_codigo")),
+					jsonEquipe.getString("dc_nome"),
+					validarCurso(Long.parseLong(jsonEquipe.getString("cd_cursos")), curso),
+					jsonEquipe.getString("dc_descricao"));
 			turmas.add(turma);
 		}
 		return turmas;
 	}
+
+	private static Curso validarCurso(long cursoJson, Curso cursoin) {
+		if (cursoJson == cursoin.cd_curso){
+			return cursoin;
+		}else {
+			return null;
+		}
+	}
+
 }
