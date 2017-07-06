@@ -8,12 +8,16 @@
         "source": "C:\\Users\\Marcos\\.android\\build-cache\\4a5cc53dac6a1efc31b6a3584ee11a248988dc4e\\output\\res\\layout\\abc_action_mode_bar.xml"
     },
     {
+        "merged": "C:\\Users\\Marcos\\SmartFood\\mobile\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
+        "source": "C:\\Users\\Marcos\\.android\\build-cache\\4a5cc53dac6a1efc31b6a3584ee11a248988dc4e\\output\\res\\layout\\abc_activity_chooser_view.xml"
+    },
+    {
         "merged": "C:\\Users\\Marcos\\SmartFood\\mobile\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
         "source": "C:\\Users\\Marcos\\.android\\build-cache\\4a5cc53dac6a1efc31b6a3584ee11a248988dc4e\\output\\res\\layout\\abc_action_menu_layout.xml"
     },
     {
-        "merged": "C:\\Users\\Marcos\\SmartFood\\mobile\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
-        "source": "C:\\Users\\Marcos\\.android\\build-cache\\4a5cc53dac6a1efc31b6a3584ee11a248988dc4e\\output\\res\\layout\\abc_activity_chooser_view.xml"
+        "merged": "C:\\Users\\Marcos\\SmartFood\\mobile\\build\\intermediates\\res\\merged\\debug\\layout\\linha_turma.xml",
+        "source": "C:\\Users\\Marcos\\SmartFood\\mobile\\src\\main\\res\\layout\\linha_turma.xml"
     },
     {
         "merged": "C:\\Users\\Marcos\\SmartFood\\mobile\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
@@ -54,6 +58,10 @@
     {
         "merged": "C:\\Users\\Marcos\\SmartFood\\mobile\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
         "source": "C:\\Users\\Marcos\\.android\\build-cache\\4a5cc53dac6a1efc31b6a3584ee11a248988dc4e\\output\\res\\layout\\select_dialog_item_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marcos\\SmartFood\\mobile\\build\\intermediates\\res\\merged\\debug\\layout\\activity_truma.xml",
+        "source": "C:\\Users\\Marcos\\SmartFood\\mobile\\src\\main\\res\\layout\\activity_truma.xml"
     },
     {
         "merged": "C:\\Users\\Marcos\\SmartFood\\mobile\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_title_material.xml",
