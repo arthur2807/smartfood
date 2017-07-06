@@ -18,15 +18,13 @@ import android.widget.Toast;
 public class DetalheFragment extends Fragment {
 
 	Turma turma;
-	ProdutoDB db;
+	CursoDB db;
 	TextView txtTitulo;
 	WebView webViewConteudo;
-	Button btnFavorito;
 	
 	public static DetalheFragment novaInstancia(Turma turma){
 		Bundle args = new Bundle();
-		args.putSerializable("truma", turma);
-		
+		args.putSerializable("turma", turma);
 		DetalheFragment f = new DetalheFragment();
 		f.setArguments(args);
 		return f;
@@ -36,7 +34,7 @@ public class DetalheFragment extends Fragment {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setHasOptionsMenu(true);
-		db = new ProdutoDB(getActivity());
+		db = new CursoDB(getActivity());
 	}
 	
 	@Override
@@ -50,7 +48,7 @@ public class DetalheFragment extends Fragment {
 		WebSettings settings = webViewConteudo.getSettings();
 		settings.setDefaultTextEncodingName("UTF-8");
 		
-		turma = (Turma)getArguments().getSerializable("truma");
+		turma = (Turma)getArguments().getSerializable("turma");
 		turma.favorito = db.favorito(turma);
 		txtTitulo.setText(turma.dc_turma);
 		webViewConteudo.loadDataWithBaseURL(null, turma.dc_horario_turma, "text/html", "UTF-8", null);

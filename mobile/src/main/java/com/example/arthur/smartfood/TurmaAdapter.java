@@ -1,26 +1,22 @@
 package com.example.arthur.smartfood;
 
-import java.util.List;
-
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.ImageView;
 import android.widget.TextView;
-
-
-import com.example.arthur.smartfood.R;
 
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 
-public class ProdutoAdapter  extends ArrayAdapter<Produto> {
+import java.util.List;
+
+public class TurmaAdapter extends ArrayAdapter<Turma> {
 
 		DisplayImageOptions options;
 
-		public ProdutoAdapter(Context context, List<Produto> objects) {
+		public TurmaAdapter(Context context, List<Turma> objects) {
 			super(context, 0, 0, objects);
 
 			options = new DisplayImageOptions.Builder()
@@ -34,30 +30,30 @@ public class ProdutoAdapter  extends ArrayAdapter<Produto> {
 
 			ViewHolder holder;
 
-			Produto produto = getItem(position);
+			Turma turma = getItem(position);
 
 			if (convertView == null) {
 				convertView = LayoutInflater.from(getContext()).inflate(
-						R.layout.linha_post, null);
+						R.layout.linha_turma, null);
 
 				holder = new ViewHolder();
 				holder.txtTexto = (TextView) convertView
 						.findViewById(R.id.textView1);
-				holder.imgFoto = (ImageView) convertView
-						.findViewById(R.id.imageView1);
+				holder.txtTexto2 = (TextView) convertView
+						.findViewById(R.id.textView2);
 				convertView.setTag(holder);
 
 			} else {
 				holder = (ViewHolder) convertView.getTag();
 			}
-			holder.txtTexto.setText(produto.nome);
-			ImageLoader.getInstance().displayImage(produto.imagem, holder.imgFoto, options);
+			holder.txtTexto.setText(turma.dc_turma);
+			holder.txtTexto2.setText(turma.cd_curso.dc_curso);
 			return convertView;
 		}
 
 		static class ViewHolder {
-			ImageView imgFoto;
 			TextView txtTexto;
+			TextView txtTexto2;
 		}
 	}
 

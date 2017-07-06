@@ -2,8 +2,6 @@ package com.example.arthur.smartfood;
 
 import java.util.List;
 
- import com.example.arthur.smartfood.R;
-
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.os.AsyncTask;
@@ -19,7 +17,7 @@ import android.widget.TextView;
 
 public class ListProdutoFragment extends ListFragment {
 
-	List<Produto> produtos;
+	List<Curso> cursos;
 	ReadPostsAsyncTask task;
 	ProgressBar progress;
 	TextView txtMensagem;
@@ -28,7 +26,7 @@ public class ListProdutoFragment extends ListFragment {
 	public void onActivityCreated(Bundle savedInstanceState) {
 		super.onActivityCreated(savedInstanceState);
 		setRetainInstance(true);
-		if (produtos != null){
+		if (cursos != null){
 			txtMensagem.setVisibility(View.GONE);
 			progress.setVisibility(View.GONE);
 			refreshList();
@@ -77,16 +75,12 @@ public class ListProdutoFragment extends ListFragment {
 		super.onListItemClick(l, v, position, id);
 		
 		if (getActivity() instanceof ClicouNoProduto){
-			((ClicouNoProduto)getActivity()).produtoFoiClicado(produtos.get(position));
+			((ClicouNoProduto)getActivity()).produtoFoiClicado(cursos.get(position));
 		}
 	}
 
 	private void refreshList() {
-		// ArrayAdapter<Post> adapter = new ArrayAdapter<Post>(
-		// getActivity(),
-		// android.R.layout.simple_list_item_1,
-		// posts);
-		ProdutoAdapter adapter = new ProdutoAdapter(getActivity(), produtos);
+		CursoAdapter adapter = new CursoAdapter(getActivity(), cursos);
 		setListAdapter(adapter);
 	}
 	
@@ -96,7 +90,7 @@ public class ListProdutoFragment extends ListFragment {
 		txtMensagem.setText("Carregando...");
 	}
 	
-	class ReadPostsAsyncTask extends AsyncTask<Void, Void, List<Produto>> {
+	class ReadPostsAsyncTask extends AsyncTask<Void, Void, List<Curso>> {
 
 		@Override
 		protected void onPreExecute() {
@@ -105,10 +99,10 @@ public class ListProdutoFragment extends ListFragment {
 		}
 
 		@Override
-		protected List<Produto> doInBackground(Void... params) {
+		protected List<Curso> doInBackground(Void... params) {
 			try {
 //				Thread.sleep(4000);
-				return ProdutoHttp.retrievePosts();
+				return CursoHttp.retrievePosts();
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
@@ -116,10 +110,10 @@ public class ListProdutoFragment extends ListFragment {
 		}
 
 		@Override
-		protected void onPostExecute(List<Produto> result) {
+		protected void onPostExecute(List<Curso> result) {
 			super.onPostExecute(result);
 			if (result != null) {
-				produtos = result;
+				cursos = result;
 				refreshList();
 				txtMensagem.setVisibility(View.GONE);
 			} else {

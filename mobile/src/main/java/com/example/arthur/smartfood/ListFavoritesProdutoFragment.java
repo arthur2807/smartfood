@@ -9,7 +9,7 @@ import android.widget.ListView;
 
 public class ListFavoritesProdutoFragment extends ListFragment {
 
-	List<Produto> produtos;
+	List<Turma> turmas;
 
 	@Override
 	public void onActivityCreated(Bundle savedInstanceState) {
@@ -27,16 +27,16 @@ public class ListFavoritesProdutoFragment extends ListFragment {
 	public void onListItemClick(ListView l, View v, int position, long id) {
 		super.onListItemClick(l, v, position, id);
 		
-		if (getActivity() instanceof ClicouNoProduto){
-			((ClicouNoProduto)getActivity()).produtoFoiClicado(produtos.get(position));
+		if (getActivity() instanceof ClicouNaTurma){
+			((ClicouNaTurma)getActivity()).turmaFoiClicado(turmas.get(position));
 		}
 	}
 
 	protected void refreshList() {
-		ProdutoDB db = new ProdutoDB(getActivity());
-		produtos = db.todosOsPosts();
-		
-		ProdutoAdapter adapter = new ProdutoAdapter(getActivity(), produtos);
+		CursoDB db = new CursoDB(getActivity());
+		turmas = db.todosTurmas();
+
+		TurmaAdapter adapter = new TurmaAdapter(getActivity(), turmas);
 		setListAdapter(adapter);
 	}
 }

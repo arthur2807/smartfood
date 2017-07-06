@@ -1,5 +1,9 @@
 package com.example.arthur.smartfood;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -8,15 +12,10 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 
+public class CursoHttp {
 
-
-public class ProdutoHttp {
-
-public static List<Produto> retrievePosts() throws Exception{
+public static List<Curso> retrievePosts() throws Exception{
 		
 		//URL url = new URL("https://dl.dropbox.com/s/cp048f8mv3ncak9/lendo.json");
 		//https://www.dropbox.com/s/e6isyozd0zj8rcw/produt.json
@@ -33,10 +32,10 @@ public static List<Produto> retrievePosts() throws Exception{
 		return null;
 	}
 
-	private static List<Produto> parseProdutoJson(InputStream inputStream) 
+	private static List<Curso> parseProdutoJson(InputStream inputStream)
 			throws JSONException, Exception {
 
-		List<Produto> produtos = new ArrayList<Produto>();
+		List<Curso> cursos = new ArrayList<Curso>();
 		
 		JSONObject json = new JSONObject(
 				bytesToString(inputStream));
@@ -44,12 +43,13 @@ public static List<Produto> retrievePosts() throws Exception{
 		JSONArray jsonEquipes = json.getJSONArray("cursos");
 		for (int i = 0; i < jsonEquipes.length(); i++) {
 			JSONObject jsonEquipe = jsonEquipes.getJSONObject(i);
-			Produto produto = new Produto(
+			Curso curso = new Curso(
+					Long.parseLong(jsonEquipe.getString("dccruso")),
 					jsonEquipe.getString("nome"),
 					jsonEquipe.getString("imglink"));
-			produtos.add(produto);
+			cursos.add(curso);
 		}	
-		return produtos;
+		return cursos;
 	}
 	
 	
@@ -63,9 +63,9 @@ public static List<Produto> retrievePosts() throws Exception{
 		return new String(bufferzao.toByteArray());
 	}
 
-	public static List<Turma> turmasJson(Produto produto) throws Exception{
+	public static List<Turma> turmasJson(Curso curso) throws Exception{
 
-		URL url = new URL("http://appagenda.comeze.com/php/GetTurmas.php?cd_curso="+produto.id);
+		URL url = new URL("http://appagenda.comeze.com/php/GetTurma.php?cdcursos="+ curso.cd_curso);
 		HttpURLConnection conexao = (HttpURLConnection)
 				url.openConnection();
 		conexao.setRequestMethod("GET");
@@ -73,12 +73,12 @@ public static List<Produto> retrievePosts() throws Exception{
 		conexao.connect();
 
 		if (conexao.getResponseCode() == 200){ // se net estever OK
-			return parseTurmaJson(conexao.getInputStream());
+			return parseTurmaJson(conexao.getInputStream(),curso);
 		}
 		return null;
 	}
 
-	private static List<Turma> parseTurmaJson(InputStream inputStream)
+	private static List<Turma> parseTurmaJson(InputStream inputStream, Curso curso)
 			throws JSONException, Exception {
 
 		List<Turma> turmas = new ArrayList<>();
@@ -86,18 +86,25 @@ public static List<Produto> retrievePosts() throws Exception{
 		JSONObject json = new JSONObject(
 				bytesToString(inputStream));
 
-		JSONArray jsonEquipes = json.getJSONArray("turmas");
+		JSONArray jsonEquipes = json.getJSONArray("turma");
 		for (int i = 0; i < jsonEquipes.length(); i++) {
 			JSONObject jsonEquipe = jsonEquipes.getJSONObject(i);
 			Turma turma = new Turma(
-					jsonEquipe.getString("dc_turma"),
-					(new Produto( Long.parseLong(jsonEquipe.getString("cd_curso")),
-							jsonEquipe.getString("dc_curso"),
-							jsonEquipe.getString("imglink")
-							)),
-					jsonEquipe.getString("dc_horario_turma"));
+					Long.parseLong(jsonEquipe.getString("cd_codigo")),
+					jsonEquipe.getString("dc_nome"),
+					validarCurso(Long.parseLong(jsonEquipe.getString("cd_cursos")), curso),
+					jsonEquipe.getString("dc_descricao"));
 			turmas.add(turma);
 		}
 		return turmas;
 	}
+
+	private static Curso validarCurso(long cursoJson, Curso cursoin) {
+		if (cursoJson == cursoin.cd_curso){
+			return cursoin;
+		}else {
+			return null;
+		}
+	}
+
 }
