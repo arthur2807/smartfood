@@ -8,16 +8,17 @@ import android.support.v7.app.ActionBarActivity;
 
 
 
-public class MainActivity extends ActionBarActivity 
+public class MainActivity extends ActionBarActivity
 	implements ClicouNoProduto {
 
     ViewPager pager;
+	ListProdutoFragment fragment;
 
     @Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ListProdutoFragment fragment = new ListProdutoFragment();
+        fragment = new ListProdutoFragment();
         pager = (ViewPager)findViewById(R.id.viewPager);
         getSupportFragmentManager()
                 .beginTransaction()
@@ -33,7 +34,7 @@ public class MainActivity extends ActionBarActivity
 	public void produtoFoiClicado(Curso curso) {
 		Intent intent = new Intent(MainActivity.this, TurmaActivity.class);
 		intent.putExtra("curso", curso);
-        startActivity(intent);
+			startActivity(intent);
 	}
 
 	@Override

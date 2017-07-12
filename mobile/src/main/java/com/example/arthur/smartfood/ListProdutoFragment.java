@@ -8,6 +8,7 @@ import android.os.AsyncTask;
 import android.os.AsyncTask.Status;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,6 +22,7 @@ public class ListProdutoFragment extends ListFragment {
 	ReadPostsAsyncTask task;
 	ProgressBar progress;
 	TextView txtMensagem;
+	SwipeRefreshLayout refreshLayout;
 
 	@Override
 	public void onActivityCreated(Bundle savedInstanceState) {
@@ -59,17 +61,31 @@ public class ListProdutoFragment extends ListFragment {
 	}
 
 	@Override
-	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-			Bundle savedInstanceState) {
-		View layout = inflater.inflate(R.layout.fragment_lista_posts,
+	public View onCreateView(final LayoutInflater inflater, ViewGroup container,
+							 Bundle savedInstanceState) {
+		final View layout = inflater.inflate(R.layout.fragment_lista_posts,
 				container, false);
 
 		progress = (ProgressBar) layout.findViewById(R.id.progressBar1);
 		txtMensagem = (TextView) layout.findViewById(R.id.textView1);
 
+		refreshLayout = (SwipeRefreshLayout) layout.findViewById(R.id.swiperefresh);
+		refreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+			@Override
+			public void onRefresh() {
+				cursos.clear();
+				cursos = null;
+				iniciarDownload();
+				refreshLayout.setRefreshing(false);
+			}
+		});
+
 		return layout;
 	}
-	
+
+
+
+
 	@Override
 	public void onListItemClick(ListView l, View v, int position, long id) {
 		super.onListItemClick(l, v, position, id);

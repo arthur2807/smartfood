@@ -6,6 +6,7 @@ import android.os.AsyncTask;
 import android.os.AsyncTask.Status;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,6 +25,7 @@ public class ListTrumaFragment extends ListFragment {
 	ReadPostsAsyncTask task;
 	ProgressBar progress;
 	TextView txtMensagem;
+	SwipeRefreshLayout refreshLayout;
 
 
 	public static ListTrumaFragment novaInstancia(Curso curso){
@@ -78,6 +80,17 @@ public class ListTrumaFragment extends ListFragment {
 
 		progress = (ProgressBar) layout.findViewById(R.id.progressBar1);
 		txtMensagem = (TextView) layout.findViewById(R.id.textView1);
+
+		refreshLayout = (SwipeRefreshLayout) layout.findViewById(R.id.swiperefresh);
+		refreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+			@Override
+			public void onRefresh() {
+				turmas.clear();
+				turmas = null;
+				iniciarDownload();
+				refreshLayout.setRefreshing(false);
+			}
+		});
 
 		return layout;
 	}
